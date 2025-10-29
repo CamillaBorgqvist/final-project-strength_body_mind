@@ -1,0 +1,298 @@
+
+  {
+  "tabata": [
+    {
+      "program":"tabata-strength-lowerbody",
+      "image": "/exercises/benboj.jpg",
+      "exercise": "Benböj",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-strength-lowerbody",
+      "image": "/exercises/hoftlyft.jpg",
+      "exercise": "Höftlyft",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-strength-lowerbody",
+      "image": "/exercises/sidlyft.jpg",
+      "exercise": "Sidlyft",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-strength-lowerbody",
+      "image": "/exercises/draken.jpg",
+      "exercise": "Draken",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-strength-lowerbody",
+      "image": "/exercises/utfall.jpg",
+      "exercise": "Utfall",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-strength-lowerbody",
+      "image": "/exercises/curtasylounge.jpg",
+      "exercise": "Curtasy lounge",
+      "description": "20 sek x 8 varv"
+    },
+
+    {
+      "program":"tabata-strength-overbody",
+      "image": "/exercises/armhavning.jpg",
+      "exercise": "Armhävning - Bred",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-strength-overbody",
+      "image": "/exercises/rygglyft.jpg",
+      "exercise": "Rygglyft",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-strength-overbody",
+      "image": "/exercises/plankan.jpg",
+      "exercise": "Planka",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-strength-overbody",
+      "image": "/exercises/armhavningsmal.jpg",
+      "exercise": "Armhävning - Smal",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-strength-overbody",
+      "image": "/exercises/sidoplanka.jpg",
+      "exercise": "Sidplanka",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-strength-overbody",
+      "image": "/exercises/plankamedkna.jpg",
+      "exercise": "Montain Climbers",
+      "description": "20 sek x 8 varv"
+    },
+
+    {
+      "program":"tabata-cardio",
+      "image": "/exercises/jumpinjack.jpg",
+      "exercise": "Jumping Jacks",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-cardio",
+      "image": "/exercises/squatjump.jpg",
+      "exercise": "Squat Jump",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-cardio",
+      "image": "/exercises/plankamedkna.jpg",
+      "exercise": "Mountain Climbers - Tempo",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-cardio",
+      "image": "/exercises/burpee.jpg",
+      "exercise": "Burpees",
+      "description": "20 sek x 8 varv"
+    },
+    {
+      "program":"tabata-cardio",
+      "image": "/exercises/utfall.jpg",
+      "exercise": "Split Jump",
+      "description": "20 sek x 8 varv"
+    }
+  ],
+
+  "stretch": [
+    {
+      "program":"stretch-lowerbody",
+      "image": "/exercises/framatfall.jpg",
+      "exercise": "Framåtfällning",
+      "description": "45 sek x 2 varv"
+    },
+    {
+      "program":"stretch-lowerbody",
+      "image": "/exercises/duvan.jpg",
+      "exercise": "Duvan",
+      "description": "45 sek x 2 varv"
+    },
+    {
+      "program":"stretch-lowerbody",
+      "image": "/exercises/hoftoppnare.jpg",
+      "exercise": "Framåtfallning en sida",
+      "description": "45 sek x 2 varv"
+    },
+    {
+      "program":"stretch-lowerbody",
+      "image": "/exercises/hoftbojare.jpg",
+      "exercise": "Höftböjare",
+      "description": "45 sek x 2 varv"
+    },
+    {
+      "program":"stretch-lowerbody",
+      "image": "/exercises/hamstring.jpg",
+      "exercise": "Hamstring Stretch",
+      "description": "45 sek x 2 varv"
+    },
+    {
+      "program":"stretch-lowerbody",
+      "image": "/exercises/crossack.jpg",
+      "exercise": "Crossack Squat",
+      "description": "45 sek x 2 varv"
+    },
+
+    {
+      "program":"stretch-overbody",
+      "image": "/exercises/sittanderotation.jpg",
+      "exercise": "Sittande rotation",
+      "description": "45 sek x 2 varv"
+    },
+    {
+      "program":"stretch-overbody",
+      "image": "/exercises/spiderwoman.jpg",
+      "exercise": "Spiderwoman",
+      "description": "45 sek x 2 varv"
+    },
+    {
+      "program":"stretch-overbody",
+      "image": "/exercises/thredneadle.jpg",
+      "exercise": "Thread the Needle",
+      "description": "45 sek x 2 varv"
+    },
+    {
+      "program":"stretch-overbody",
+      "image": "/exercises/kattko.jpg",
+      "exercise": "Katt&Ko",
+      "description": "45 sek x 2 varv"
+    },
+    {
+      "program":"stretch-overbody",
+      "image": "/exercises/scorpion.jpg",
+      "exercise": "Scorpion Twist",
+      "description": "45 sek x 2 varv"
+    },
+    {
+      "program":"stretch-overbody",
+      "image": "/exercises/rotationpinne.jpg",
+      "exercise": "Axelrotation",
+      "description": "45 sek x 2 varv"
+    }
+  ],
+
+  "gym": [
+    {
+      "program":"gym-back",
+      "image": "/exercises/framatfall.jpg",
+      "exercise": "Framåtfällning",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-back",
+      "image": "/exercises/duvan.jpg",
+      "exercise": "Duvan",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-back",
+      "image": "/exercises/hoftoppnare.jpg",
+      "exercise": "Framåtfallning en sida",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-back",
+      "image": "/exercises/hoftbojare.jpg",
+      "exercise": "Höftböjare",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-back",
+      "image": "/exercises/hamstring.jpg",
+      "exercise": "Hamstring Stretch",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-back",
+      "image": "/exercises/crossack.jpg",
+      "exercise": "Crossack Squat",
+      "description": "10-12 x 3 set"
+    },
+
+    {
+      "program":"gym-legs",
+      "image": "/exercises/sittanderotation.jpg",
+      "exercise": "Sittande rotation",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-legs",
+      "image": "/exercises/spiderwoman.jpg",
+      "exercise": "Spiderwoman",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-legs",
+      "image": "/exercises/thredneadle.jpg",
+      "exercise": "Thread the Needle",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-legs",
+      "image": "/exercises/kattko.jpg",
+      "exercise": "Katt&Ko",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-legs",
+      "image": "/exercises/scorpion.jpg",
+      "exercise": "Scorpion Twist",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-legs",
+      "image": "/exercises/rotationpinne.jpg",
+      "exercise": "Axelrotation",
+      "description": "10-12 x 3 set"
+    },
+
+    {
+      "program":"gym-chest",
+      "image": "/exercises/sittanderotation.jpg",
+      "exercise": "Sittande rotation",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-chest",
+      "image": "/exercises/spiderwoman.jpg",
+      "exercise": "Spiderwoman",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-chest",
+      "image": "/exercises/thredneadle.jpg",
+      "exercise": "Thread the Needle",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-chest",
+      "image": "/exercises/kattko.jpg",
+      "exercise": "Katt&Ko",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-chest",
+      "image": "/exercises/scorpion.jpg",
+      "exercise": "Scorpion Twist",
+      "description": "10-12 x 3 set"
+    },
+    {
+      "program":"gym-chest",
+      "image": "/exercises/rotationpinne.jpg",
+      "exercise": "Axelrotation",
+      "description": "10-12 x 3 set"
+    }
+  ]
+}
