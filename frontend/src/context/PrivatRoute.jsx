@@ -8,7 +8,7 @@ export const PrivateRoute = ({ children }) => {
 
   if (!isLoggedIn || !token) {
     //redirect user to Sign in with message if trying to reach site with login demand
-    return ( <Navigate to="/Signin" replace state={{from:location.pathname, message: "Du måste vara inloggad för att se Dina sidor"}} />
+    return ( <Navigate to="/Signin" replace state={{from:location.pathname, message: "Du måste vara inloggad för att se den här sidan"}} />
   )
 }
 

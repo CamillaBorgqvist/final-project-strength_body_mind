@@ -1,9 +1,12 @@
 import { useLocation } from "react-router-dom";
 import { TimerInterval } from "../TimerInterval";
+import { useState } from "react";
 
 export const WorkoutDetails = () => {
   const location = useLocation();
   const { choice, image, exercises } = location.state || {};
+  const [ zoomedImage, setZoomedImage] = useState(null);
+  
 
   const timerSettings = {
     "stretch-lowerbody": { work: 45, rest: 7, rounds: 2 },
@@ -22,11 +25,13 @@ export const WorkoutDetails = () => {
 
       <div className="exercise-container">
         {exercises.map((exercise, index) => (
-          <div className="exercise-card" key={index}>
-            <img src={exercise.image} alt={exercise.exercise} />
-            <div className="exercise-description">
-              <h5>{exercise.exercise}</h5>
-              <p>{exercise.description}</p>
+          <div className="exercise-card exercise-card-details" key={index}>
+            <div className="exercise-image-description">
+              <img src={exercise.image} alt={exercise.exercise} onClick={() => setZoomedImage(exercise.image)} className="exercice-image" />
+              <div className="exercise-description">
+                <h5>{exercise.exercise}</h5>
+                <p>{exercise.description}</p>
+              </div>  
             </div>  
 
             <div className="timer-style">
@@ -41,6 +46,15 @@ export const WorkoutDetails = () => {
           </div>  
         ))}
       </div>
+
+      {zoomedImage && (
+        <div className="image-modal">
+          <button className="close-modal" onClick={() => setZoomedImage(null)}>
+            ×
+          </button>
+          <img src={zoomedImage} alt="Zoomed exercise image" />
+        </div>
+      )}
     </section>
   );
 };

@@ -14,6 +14,7 @@ export const SignUp = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password })
       })
+      
       const data = await response.json()
       if (data.success) {
         setMessage("Konto skapat! 🎉")
@@ -27,7 +28,7 @@ export const SignUp = () => {
   }
 
   return (
-    <form onSubmit={handleSignup}>
+    <form onSubmit={handleSignup} className="login-form">
       <h2>Skapa konto</h2>
       <input
         type="text"

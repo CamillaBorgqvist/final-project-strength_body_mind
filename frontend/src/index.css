@@ -1,28 +1,29 @@
 body{
-    margin: 0px
+  margin: 0px;
+  
 }
 
 h1 {
-font-family: "American Typewriter", "Courier New", Courier, monospace;
+  font-family: "American Typewriter", "Courier New", Courier, monospace;
 }
 
 h2, h4, h6, h3{
-    font-family: Calibri;
-    font-weight:normal;
+  font-family: Calibri;
+  font-weight:normal;
 }
 
 h2{
-    width: auto;
-    margin-top: 40px;
-    padding: 0px 15px;
-    font-size: 30px;
+  width: auto;
+  padding: 0px 15px;
+  font-size: 30px;
+  color: #292929;
 }
 
 h4{
-    font-size: 18px;
-    padding: 10px 10px;
-    margin: 0px;
-    font-weight: lighter;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin: 0px;
+  font-weight: lighter;
 }
 
 p {
@@ -36,6 +37,7 @@ p {
     display: flex;
     justify-content: space-between;
     margin: 5px;
+    margin-top: 10px;
 }
 
 .img-text-header{
@@ -62,15 +64,26 @@ p {
   position: relative;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   gap: 10px;
 }
 
 .sign-in-button-header{
   background-color: rgba(246, 244, 248, 0.6);
-  border: none;
+  border: 1px solid rgb(214, 203, 224); 
   font-size: 12px;
   padding: 5px 15px;
   border-radius: 15px;
+  color: rgb(48, 48, 48);
+}
+
+.menu-button-header{
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-right: 15px;
+  color: rgb(214, 203, 224);
 }
 
 .navbar {
@@ -129,8 +142,30 @@ p {
 .hero-section {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 400px;
   overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color:#f3f3f3;
+  position: absolute;
+  bottom: 10px;
+}
+
+.hero-text h1{
+  font-size: 25px;
+  margin-bottom: 0px;
+  padding-left: 15px;
+}
+
+.hero-text h2{
+  font-size: 18px;
+  margin-top: 0px;
+  color:#f3f3f3;
 }
 
 .hero-image {
@@ -148,16 +183,6 @@ p {
   opacity: 0.8;
 }
 
-/*.hero-overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 15px;
-  align-items: flex-start;
-}*/
-
-
-
 /*HOME*/
 
 .home-first-section, .home-second-section{
@@ -167,6 +192,12 @@ p {
     text-align: center;
 }
 
+/*.home-first-section h2{
+  font-size: 30px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}*/
+
 .home-image-box{
   display: flex;
 }
@@ -175,19 +206,53 @@ p {
     width: 50%;
     height: auto;
     object-fit: cover;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    /*opacity: 0.7;
-    border-radius: 8px;*/
+}
+
+.mobile-home-description{
+  margin: 60px 0px;
+}
+
+.desktop-home-layout h2 {
+  margin-bottom: 0px;
+  margin-top: 100px;
+}
+
+.desktop-home-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.desktop-home-description img{
+  border-radius: 10px;
+}
+
+.desktop-home-description-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.desktop-home-description-text h4 {
+  font-size: 22px;
+  color: #333;
+  max-width: 500px; 
 }
 
 .home-scroll-section{
-    margin-top: 25px;
-    margin-bottom: 50px;
     display: flex;
     overflow-x: auto;       /* horisontell scroll */
     gap: 10px;              
-    padding: 30px 0px;   
+    padding: 50px 15px;   
     scrollbar-width: none;
     overflow-y: hidden;
     background-color: rgba(246, 244, 248, 0.6);
@@ -197,13 +262,13 @@ p {
   display: flex;
   flex-direction: column;  
   align-items: center;
+  justify-content: center;
   flex: 0 0 auto;
   margin-right: 20px;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   scroll-snap-align: start;
   border-radius: 8px;
-  text-align: center;
   border: 1px solid rgb(216, 214, 214);
   background-color: white;
 }
@@ -211,20 +276,18 @@ p {
 .home-scroll-image {
   width: 60px;
   height: 60px;
-  border-radius: 6px;
+  object-fit: cover;
   padding-top: 20px;
-  /*opacity: 0.7;*/
 }
 
 .home-scroll-text {
     max-width: 80%;
     text-align:center; 
     word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-    min-height: 45px;
+    /*min-height: 45px;*/
     align-items: center;
-    font-size: 11px;
+    font-size: 12px;
+    padding: 0px 7px;
 }
 
 .home-scroll-section div {
@@ -237,10 +300,15 @@ p {
 
 .sign-up-button{
   background-color: rgba(246, 244, 248, 0.6);
-  border: none;
+  border: 1px solid rgb(214, 203, 224); 
   font-size: 16px;
   padding: 10px 30px;
   border-radius: 25px;
+  color: rgb(48, 48, 48);
+}
+
+.home-second-section{
+  margin: 60px 0px;
 }
 
 /*WORKOUT OVERVIEW*/
@@ -249,18 +317,17 @@ p {
 .woukout-overview-section {
     display: flex;
     overflow-x: auto;       /* horisontell scroll */
-    gap: 20px;              
-    padding-bottom: 10px;   
+    gap: 20px;                
     scrollbar-width: none; 
-    margin-top: 50px;
-    padding: 20px 15px;
+    /*margin-top: 50px;*/
+    padding: 40px 15px;
     background-color: rgba(246, 244, 248, 0.6);
 }
 
 .workout-type-item {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 250px;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -287,8 +354,91 @@ p {
 
 .select-workout-button{
   background-color: rgba(246, 244, 248, 0.6);
-  border: none;
+  border: 1px solid rgb(214, 203, 224); 
   font-size: 14px;
   padding: 10px 25px;
   border-radius: 15px;
+  color: rgb(48, 48, 48);
+}
+
+.back-button{
+  background:none;
+  border: none;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.back-arrow{
+  width: 20px;
+  height: 20px;
+  stroke: #ccc;
+  stroke-width: 2;
+  transition: stroke 0.2s ease;
+}
+
+.back-button:hover .back-arrow {
+  stroke: #666;          
+}
+
+@media (min-width: 465px) {
+
+  .home-scroll-section{
+    justify-content: center;
+  }
+}
+
+@media (min-width: 700px) {
+
+  .hero-section{
+    height: 700px;
+  }
+
+  .home-scroll-item{
+    width: 150px;
+    height: 150px;
+  }
+
+  .home-image-box{
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-image{
+    width: 40%;
+    border-radius: 8px;
+  }
+
+  h2{
+    font-size: 40px;
+    margin: 60px 0px;
+  }
+
+  .hero-text h1{
+    font-size: 45px;
+}
+
+.hero-text h2{
+    font-size: 26px;
+
+}
+}
+
+
+@media (min-width: 820px) {
+
+  .woukout-overview-section {
+    justify-content: center;
+  }
+
+}
+
+@media (min-width: 1000px){
+
+.home-image{
+    width: 30%;
+}
+
+.home-scroll-section{
+  margin-top: 100px;
+}
 }

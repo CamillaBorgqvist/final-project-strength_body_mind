@@ -33,7 +33,7 @@ export const Header = () => {
   return (
     <div className="header">
         <div className="img-text-header">
-            <img src="/logo.jpg" alt="logo imgage" />
+            <Link to="/"> <img src="/logo.jpg" alt="logo imgage" /> </Link>
             <h1>Strength Body Mind</h1>
         </div>
         <div className="buttons-header">

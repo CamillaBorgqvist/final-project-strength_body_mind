@@ -186,112 +186,112 @@
   "gym": [
     {
       "program":"gym-back",
-      "image": "/exercises/framatfall.jpg",
-      "exercise": "Framåtfällning",
+      "image": "/exercises/latsdrag.jpg",
+      "exercise": "Latsdrag",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-back",
-      "image": "/exercises/duvan.jpg",
-      "exercise": "Duvan",
+      "image": "/exercises/ryggresning.jpg",
+      "exercise": "Ryggresning",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-back",
-      "image": "/exercises/hoftoppnare.jpg",
-      "exercise": "Framåtfallning en sida",
+      "image": "/exercises/rodd.jpg",
+      "exercise": "Rodd",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-back",
-      "image": "/exercises/hoftbojare.jpg",
-      "exercise": "Höftböjare",
+      "image": "/exercises/facepull.jpg",
+      "exercise": "Face Pull",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-back",
-      "image": "/exercises/hamstring.jpg",
-      "exercise": "Hamstring Stretch",
+      "image": "/exercises/roddbrost.jpg",
+      "exercise": "Rodd mot bröst",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-back",
-      "image": "/exercises/crossack.jpg",
-      "exercise": "Crossack Squat",
+      "image": "/exercises/latsstaende.jpg",
+      "exercise": "Lats - Skiddrag",
       "description": "10-12 x 3 set"
     },
 
     {
       "program":"gym-legs",
-      "image": "/exercises/sittanderotation.jpg",
-      "exercise": "Sittande rotation",
+      "image": "/exercises/sidekick.jpg",
+      "exercise": "Sidekicks",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-legs",
-      "image": "/exercises/spiderwoman.jpg",
-      "exercise": "Spiderwoman",
+      "image": "/exercises/benpress.jpg",
+      "exercise": "Benpress",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-legs",
-      "image": "/exercises/thredneadle.jpg",
-      "exercise": "Thread the Needle",
+      "image": "/exercises/hipthrust.jpg",
+      "exercise": "Hip thrusts",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-legs",
-      "image": "/exercises/kattko.jpg",
-      "exercise": "Katt&Ko",
+      "image": "/exercises/squat.jpg",
+      "exercise": "Squats",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-legs",
-      "image": "/exercises/scorpion.jpg",
-      "exercise": "Scorpion Twist",
+      "image": "/exercises/marklyft.jpg",
+      "exercise": "Marklyft",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-legs",
-      "image": "/exercises/rotationpinne.jpg",
-      "exercise": "Axelrotation",
+      "image": "/exercises/utfallhantlar.jpg",
+      "exercise": "Split squats",
       "description": "10-12 x 3 set"
     },
 
     {
       "program":"gym-chest",
-      "image": "/exercises/sittanderotation.jpg",
-      "exercise": "Sittande rotation",
+      "image": "/exercises/hantelpress.jpg",
+      "exercise": "Hantelpress - Liggande",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-chest",
-      "image": "/exercises/spiderwoman.jpg",
-      "exercise": "Spiderwoman",
+      "image": "/exercises/armhavning.jpg",
+      "exercise": "Armhävning - Bred",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-chest",
-      "image": "/exercises/thredneadle.jpg",
-      "exercise": "Thread the Needle",
+      "image": "/exercises/hantelpresssittande.jpg",
+      "exercise": "Hantelpress - Sittande",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-chest",
-      "image": "/exercises/kattko.jpg",
-      "exercise": "Katt&Ko",
+      "image": "/exercises/kryssdrag.jpg",
+      "exercise": "Kryggdrag",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-chest",
-      "image": "/exercises/scorpion.jpg",
-      "exercise": "Scorpion Twist",
+      "image": "/exercises/hantelflys.jpg",
+      "exercise": "Hantelflys",
       "description": "10-12 x 3 set"
     },
     {
       "program":"gym-chest",
-      "image": "/exercises/rotationpinne.jpg",
-      "exercise": "Axelrotation",
+      "image": "/exercises/backflys.jpg",
+      "exercise": "Backflys",
       "description": "10-12 x 3 set"
     }
   ]

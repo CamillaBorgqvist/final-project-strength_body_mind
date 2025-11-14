@@ -1,9 +1,21 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import "../../css/workoutselectioncard.css"
+import { ArrowLeft } from "lucide-react"
 
 export const WorkoutSelectionGym = () => {
+  const navigate = useNavigate ();
 
   return (
+  <>
+    <div className="header-pick-workout">
+      <h2>Gym Workout</h2>
+      <p>Med våra tre gympass får kroppen all träning den behöver för veckan. 
+        Vi ger dig 6 övningar per pass och du väljer själv vikt för att utmana dig. Varva gärna ner med ett av våra Stretchpass efteråt </p>
+      <button onClick={() => navigate(-1)} className="back-button" >
+        <ArrowLeft className="back-arrow" />
+      </button>  
+    </div>
+
     <section className="pick-workout-section">
       <Link to="/Workoutspecific" state={{ choice: "gym-back", image: "/gymback.jpg" }} className="workout-card">
       <img src="/gymback.jpg" alt="Gym machine" />
@@ -29,5 +41,6 @@ export const WorkoutSelectionGym = () => {
       </div>
     </Link>
     </section>
+  </>  
   )
 }

@@ -3,8 +3,17 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
+
+.header-pick-workout{
+  max-width: 500px;
+}
+
+.header-pick-workout p{
+  padding-right: 15px;
+}
+
 .workout-card {
   position: relative;
   display: block;
@@ -46,4 +55,12 @@
   margin: 0px;
   padding-left: 10px;
   padding-bottom: 10px;
+}
+
+@media (min-width: 700px) {
+
+  .pick-workout-section{
+    flex-direction: row;
+    justify-content: center;
+  }
 }

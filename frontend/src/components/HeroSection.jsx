@@ -25,9 +25,10 @@ export const HeroSection = () => {
         {images.map((src, index) => (
             <img key={index} src={src} alt="Fitness images" className={`hero-image ${index === currentImg ? "active" : ""}`} />
         ))}
-        {/*<h1 className="hero-overlay"> Strength</h1>
-        <h1 className="hero-overlay"> Body</h1>
-        <h1 className="hero-overlay"> Mind</h1> */}
+        <div className="hero-text">
+            <h1>Strength Body Mind</h1>
+            <h2>Träningspass för alla tillfällen, för alla</h2>
+        </div>
     </section>
   );
 }

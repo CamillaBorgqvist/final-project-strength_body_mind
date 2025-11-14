@@ -1,6 +1,8 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
 import { useNavigate, useLocation } from "react-router-dom"
 import { useAuth } from "../context/AuthContext"
+import "../css/form.css"
 
 export const SignIn = () => {
   const [email, setEmail] = useState("")
@@ -25,7 +27,7 @@ export const SignIn = () => {
   };
 
   return (
-    <form onSubmit={handleLogin}>
+    <form onSubmit={handleLogin} className="login-form">
       <h2>Logga in</h2>
 
       {/*message if user i redirected to Signin*/}
@@ -47,6 +49,8 @@ export const SignIn = () => {
       />
       <button type="submit">Logga in</button>
       <p>{message}</p>
+      <p>Har du inte ett konto hoss oss än? Skapa ett här nere.</p>
+      <Link to="/Signup"> <button> Skapa Konto </button> </Link>
     </form>
   )
 };

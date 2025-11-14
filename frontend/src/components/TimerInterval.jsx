@@ -64,7 +64,7 @@ export const TimerInterval = ({ work = 20, rest = 10, rounds = 8 }) => {
       )}
       <p>Varv: {cyclesLeft}</p>
       {!isDone && (
-        <button onClick={() => setIsRunning((prev) => !prev)}>
+        <button className="start-paus-button" onClick={() => setIsRunning((prev) => !prev)}>
           {isRunning ? "Pausa" : "Start"}
         </button>
       )}

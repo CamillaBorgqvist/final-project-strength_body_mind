@@ -36,8 +36,8 @@ export const WelcomeSignedIn = () => {
   return ( 
     <>
       <h2>Välkommen {userData.name}</h2>
-      <h2>Vilket pass vill du träna idag!</h2>
-      < WorkoutOverview />
+      <h2>Vilket pass vill du träna idag?</h2>
+      <WorkoutOverview showHeader={false} />
 
       {savedWorkouts.length > 0 && (
         <section className="saved-workouts-section">
