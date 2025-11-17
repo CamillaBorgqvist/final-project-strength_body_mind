@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-rou
 import { PrivateRoute } from "./context/PrivatRoute"
 import { Header } from "./components/Header"
 import { About } from "./components/About"
-import { Home } from "./components/home"
+import { Home } from "./components/Home"
 import { SignIn } from "./components/SignIn"
 import { SignUp } from "./components/SignUp"
 import { WelcomeSignedIn } from "./components/WelcomeSignedIn"
