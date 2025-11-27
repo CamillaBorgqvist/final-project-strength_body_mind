@@ -26,8 +26,7 @@ export const HeroSection = () => {
             <img key={index} src={src} alt="Fitness images" className={`hero-image ${index === currentImg ? "active" : ""}`} />
         ))}
         <div className="hero-text">
-            <h1>Strength Body Mind</h1>
-            <h2>Träningspass för alla tillfällen, för alla</h2>
+            {/*<h1>Strength Body Mind</h1>*/}
         </div>
     </section>
   );

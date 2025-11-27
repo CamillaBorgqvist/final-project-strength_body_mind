@@ -185,111 +185,111 @@
 
   "gym": [
     {
-      "program":"gym-back",
+      "program":"gym-rygg",
       "image": "/exercises/latsdrag.jpg",
       "exercise": "Latsdrag",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-back",
+      "program":"gym-rygg",
       "image": "/exercises/ryggresning.jpg",
       "exercise": "Ryggresning",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-back",
+      "program":"gym-rygg",
       "image": "/exercises/rodd.jpg",
       "exercise": "Rodd",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-back",
+      "program":"gym-rygg",
       "image": "/exercises/facepull.jpg",
       "exercise": "Face Pull",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-back",
+      "program":"gym-rygg",
       "image": "/exercises/roddbrost.jpg",
       "exercise": "Rodd mot bröst",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-back",
+      "program":"gym-rygg",
       "image": "/exercises/latsstaende.jpg",
       "exercise": "Lats - Skiddrag",
       "description": "10-12 x 3 set"
     },
 
     {
-      "program":"gym-legs",
+      "program":"gym-ben",
       "image": "/exercises/sidekick.jpg",
       "exercise": "Sidekicks",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-legs",
+      "program":"gym-ben",
       "image": "/exercises/benpress.jpg",
       "exercise": "Benpress",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-legs",
+      "program":"gym-ben",
       "image": "/exercises/hipthrust.jpg",
       "exercise": "Hip thrusts",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-legs",
+      "program":"gym-ben",
       "image": "/exercises/squat.jpg",
       "exercise": "Squats",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-legs",
+      "program":"gym-ben",
       "image": "/exercises/marklyft.jpg",
       "exercise": "Marklyft",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-legs",
+      "program":"gym-ben",
       "image": "/exercises/utfallhantlar.jpg",
       "exercise": "Split squats",
       "description": "10-12 x 3 set"
     },
 
     {
-      "program":"gym-chest",
+      "program":"gym-bröst-och-axlar",
       "image": "/exercises/hantelpress.jpg",
       "exercise": "Hantelpress - Liggande",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-chest",
+      "program":"gym-bröst-och-axlar",
       "image": "/exercises/armhavning.jpg",
       "exercise": "Armhävning - Bred",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-chest",
+      "program":"gym-bröst-och-axlar",
       "image": "/exercises/hantelpresssittande.jpg",
       "exercise": "Hantelpress - Sittande",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-chest",
+      "program":"gym-bröst-och-axlar",
       "image": "/exercises/kryssdrag.jpg",
       "exercise": "Kryggdrag",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-chest",
+      "program":"gym-bröst-och-axlar",
       "image": "/exercises/hantelflys.jpg",
       "exercise": "Hantelflys",
       "description": "10-12 x 3 set"
     },
     {
-      "program":"gym-chest",
+      "program":"gym-bröst-och-axlar",
       "image": "/exercises/backflys.jpg",
       "exercise": "Backflys",
       "description": "10-12 x 3 set"

@@ -50,26 +50,25 @@ export const WorkoutSpecific = () => {
             </div>  
           </div>
         ))}
-      </div>
+      
+        <div className="workout-button-container">  
+          <Link to="/Workoutdetails" state={{ choice, image, exercises: selectedExercises }}> 
+            <button className="workoutandsave-button"> Träna nu </button> 
+          </Link>
 
-      <div className="workout-button-container">  
-        <Link to="/Workoutdetails" state={{ choice, image, exercises: selectedExercises }}> 
-          <button className="workoutandsave-button"> Träna nu </button> 
-        </Link>
+          <button className="workoutandsave-button" onClick={handleSaveWorkout}> Spara pass </button>
+          {message && <p className="save-message">{message}</p>}
 
-        <button className="workoutandsave-button" onClick={handleSaveWorkout}> Spara pass </button>
-      </div>
-
-      {message && <p className="save-message">{message}</p>}
-
-      {zoomedImage && (
-        <div className="image-modal">
-          <button className="close-modal" onClick={() => setZoomedImage(null)}>
-            ×
-          </button>
-          <img src={zoomedImage} alt="Zoomed exercise image" />
+          {zoomedImage && (
+            <div className="image-modal">
+              <button className="close-modal" onClick={() => setZoomedImage(null)}>
+                ×
+              </button>
+              <img src={zoomedImage} alt="Zoomed exercise image" />
+            </div>
+          )}
         </div>
-      )}
+      </div>
     </section>
   </>    
   );

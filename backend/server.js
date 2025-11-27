@@ -7,7 +7,7 @@ import crypto from "crypto"
 import express from "express"
 import mongoose from "mongoose"
 
-const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/test-auth"
+const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/strength-body-mind" //changed from test-auth
 mongoose.connect(mongoUrl)
 mongoose.Promise = Promise
 
@@ -60,9 +60,10 @@ app.use(cors())
 app.use(express.json())
 
 // Test route
+/*
 app.get("/", (req, res) => {
   res.send("Hello Technigo!")
-})
+})*/
 
 // Register user
 app.post("/users", async (req, res) => {

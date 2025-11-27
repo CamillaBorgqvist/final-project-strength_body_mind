@@ -42,6 +42,7 @@ export const WelcomeSignedIn = () => {
       {savedWorkouts.length > 0 && (
         <section className="saved-workouts-section">
           <h2>Dina sparade pass</h2>
+          <div className="saved-workouts-card-section">
             {savedWorkouts.map((workout, index) => (
               <Link key={index} to="/Workoutspecific" state={{choice: workout.choice, image: workout.image}} className="workout-card">
                 <img src={workout.image} alt={workout.choice} />
@@ -51,6 +52,7 @@ export const WelcomeSignedIn = () => {
                 </div>
               </Link>
             ))}  
+          </div>  
        </section> 
       )}
     </>  

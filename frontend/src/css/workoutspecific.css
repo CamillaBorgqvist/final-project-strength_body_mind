@@ -84,6 +84,7 @@
   padding: 10px 25px;
   border-radius: 15px;
   color: rgb(48, 48, 48);
+  cursor: pointer;
 }
 
 .start-paus-button{
@@ -94,7 +95,23 @@
     border-radius: 15px;
     margin-top: 5px;
     color: rgb(48, 48, 48);
+    cursor: pointer;
+    width: 57px;
+}
 
+.gym-check-button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid rgb(214, 203, 224);
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.gym-check-button.checked {
+    background-color: rgb(159, 211, 159);
+    border: 2px solid rgb(108, 156, 108);
 }
 
 /*för zoomad bild*/
@@ -140,6 +157,29 @@
     .timer-style{
         margin-right: 25px;
     }
+
+    .program-image{
+        height: 300px;
+    }
+}
+
+@media (min-width: 1000px){
+
+.program-image{
+    width: 65%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.workout-specific, .workout-details{
+    display: flex;
+}
+
+.exercise-container{
+    margin-top: 0px;
+}
 }
 
 

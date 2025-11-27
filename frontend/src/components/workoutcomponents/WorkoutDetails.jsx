@@ -1,12 +1,18 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { TimerInterval } from "../TimerInterval";
 import { useState } from "react";
+import { ArrowLeft } from "lucide-react";
 
 export const WorkoutDetails = () => {
   const location = useLocation();
   const { choice, image, exercises } = location.state || {};
   const [ zoomedImage, setZoomedImage] = useState(null);
-  
+  const navigate = useNavigate ();  
+  const [checked, setChecked] = useState(
+    exercises.map(() => false)
+  );
+
+  const ifGym = choice === "gym-rygg" || choice === "gym-ben" || choice === "gym-bröst-och-axlar";
 
   const timerSettings = {
     "stretch-lowerbody": { work: 45, rest: 7, rounds: 2 },
@@ -19,9 +25,14 @@ export const WorkoutDetails = () => {
   const settings = timerSettings [choice];
 
   return (
+  <>
+    <h2>{choice.replaceAll("-", " ").replace(/\b\w/g, c => c.toUpperCase())}</h2>
+    <button onClick={() => navigate(-1)} className="back-button" >
+        <ArrowLeft className="back-arrow" />
+      </button> 
+    
     <section className="workout-details">
       {image && <img src={image} alt={choice} className="program-image" />}
-      <h3>{choice.replaceAll("-", " ").toUpperCase()}</h3>
 
       <div className="exercise-container">
         {exercises.map((exercise, index) => (
@@ -35,11 +46,21 @@ export const WorkoutDetails = () => {
             </div>  
 
             <div className="timer-style">
-              {settings && (
+              {!ifGym && settings && (
                 <TimerInterval
                   work={settings.work}
                   rest={settings.rest}
                   rounds={settings.rounds}
+                />
+              )}
+
+              {ifGym && (
+                <button className={`gym-check-button ${checked[index] ? "checked" : ""}`} 
+                  onClick ={() => {
+                    const newState = [...checked];
+                    newState [index] = !newState[index];
+                    setChecked(newState);
+                  }}
                 />
               )} 
             </div>
@@ -56,5 +77,6 @@ export const WorkoutDetails = () => {
         </div>
       )}
     </section>
+  </>  
   );
 };
