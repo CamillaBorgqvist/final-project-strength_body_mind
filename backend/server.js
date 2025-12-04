@@ -67,7 +67,7 @@ const port = process.env.PORT || 8080
 const app = express()
 
 app.use(cors({
-  origin: ["https://strengthbodymind.netlify.app/", "http://localhost:5174"],
+  origin: ["https://strengthbodymind.netlify.app", "http://localhost:5174"],
   credentials: true 
 }));
 
