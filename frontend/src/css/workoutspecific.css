@@ -73,18 +73,23 @@
 .workout-button-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     margin-bottom: 20px;
 }
 
 .workoutandsave-button{
-  background-color: rgba(246, 244, 248, 0.6);
-  border: 1px solid rgb(214, 203, 224); 
-  font-size: 14px;
-  padding: 10px 25px;
-  border-radius: 15px;
-  color: rgb(48, 48, 48);
-  cursor: pointer;
+    background-color: rgba(246, 244, 248, 0.6);
+    border: 1px solid rgb(214, 203, 224); 
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 15px;
+    color: rgb(48, 48, 48);
+    cursor: pointer;
+}
+
+.save-message{
+    margin: 0px;
 }
 
 .start-paus-button{
@@ -114,38 +119,39 @@
     border: 2px solid rgb(108, 156, 108);
 }
 
-/*för zoomad bild*/
+/*zoomed image*/
 .image-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
 .image-modal img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 8px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
 }
 
 .close-modal {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
 }
 
 @media (min-width: 500px){
+
     .exercise-container{
         align-items: center;
     }
@@ -165,21 +171,21 @@
 
 @media (min-width: 1000px){
 
-.program-image{
-    width: 65%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-left: 15px;
-}
+    .program-image{
+        width: 65%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-left: 15px;
+    }
 
-.workout-specific, .workout-details{
-    display: flex;
-}
+    .workout-specific, .workout-details{
+        display: flex;
+    }
 
-.exercise-container{
-    margin-top: 0px;
-}
+    .exercise-container{
+        margin-top: 0px;
+    }
 }
 
 

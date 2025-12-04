@@ -4,61 +4,62 @@
     align-items: center;
     gap: 15px;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .header-pick-workout{
-  max-width: 500px;
+    max-width: 500px;
 }
 
 .header-pick-workout h2{
-  margin-top: 60px;
+    margin-top: 60px;
 }
 
 .header-pick-workout p{
-  padding-right: 15px;
+    padding-right: 15px;
 }
 
 .workout-card {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  border-radius: 8px;
-  transition: transform 0.3s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .workout-card:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .workout-card img {
-  width: 250px;
-  height: auto;
-  object-fit: cover;
+    width: 250px;
+    height: auto;
+    object-fit: cover;
 }
 
 .workout-card .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 250px;
-  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
 }
 
 .workout-card .overlay h6 {
-  color: white;
-  font-weight: 500;
-  font-size: 17px;
-  margin: 0px;
-  padding-left: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    margin: 0px;
+    padding-left: 10px;
 }
 
 .workout-card .overlay p {
-  color: rgb(229, 231, 235);
-  font-size: 12px;
-  margin: 0px;
-  padding-left: 10px;
-  padding-bottom: 10px;
+    color: rgb(229, 231, 235);
+    font-size: 12px;
+    margin: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 @media (min-width: 820px) {
@@ -75,5 +76,9 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-}
+  }
+
+ .back-button{
+    align-self: flex-start;
+  }
 }

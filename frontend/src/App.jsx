@@ -14,6 +14,7 @@ import { WorkoutSpecific } from "./components/workoutcomponents/WorkoutSpecific"
 import { WorkoutDetails } from "./components/workoutcomponents/WorkoutDetails"
 import { AuthProvider } from "./context/AuthContext"
 import { SaveWorkoutProvider } from './context/SaveWorkoutContext';
+import { Footer } from './components/Footer';
 
 
 export const App = () => {
@@ -37,6 +38,7 @@ export const App = () => {
               <Route path="/Workoutspecific" element={ <PrivateRoute> <WorkoutSpecific /> </PrivateRoute>} />
               <Route path="/Workoutdetails" element={ <PrivateRoute><WorkoutDetails /> </PrivateRoute>} />
             </Routes>
+            <Footer />
           </main>
         </BrowserRouter>
       </SaveWorkoutProvider>

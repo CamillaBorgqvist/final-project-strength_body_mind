@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { ArrowLeft} from "lucide-react"
+import "../css/workoutoverview.css"
 
 export const WorkoutOverview = ({showHeader = true}) => {
   const navigate = useNavigate ();

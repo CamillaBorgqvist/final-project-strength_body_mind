@@ -3,13 +3,13 @@ import { createContext, useContext, useState, useEffect } from "react";
 const AuthContext = createContext ();
 
 export const AuthProvider = ({ children }) => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
-  const [user, setUser] = useState (null)
 
-  useEffect(() => {
-    const token = localStorage.getItem("accessToken")
-    if (token) setIsLoggedIn (true)
-  }, [])
+  const initialToken = localStorage.getItem("accessToken")
+
+  const [token, setToken] = useState(initialToken)
+  const [isLoggedIn, setIsLoggedIn] = useState(!!initialToken)
+  const [user, setUser] = useState (null)
+  
 
   // LOGIN-funktion
   const login = async (email, password) => {
@@ -22,27 +22,32 @@ export const AuthProvider = ({ children }) => {
       const data = await response.json()
 
       if (data.success) {
-        localStorage.setItem("accessToken", data.accessToken)
-        setIsLoggedIn(true)
-        setUser(data.user)
-        return { success: true }
+        localStorage.setItem("accessToken", data.accessToken);
+
+        setToken(data.accessToken);
+        setIsLoggedIn(true);
+        setUser(data.user);
+
+        return { success: true };
       } else {
         return { success: false, message: "Fel e-post eller lösenord" }
       }
     } catch (error) {
       return { success: false, message: "Serverfel: " + error.message }
     }
-  }
+  };
 
   // LOGOUT
   const logout = () => {
-    localStorage.removeItem("accessToken")
-    setIsLoggedIn(false)
-    setUser(null)
-  }
+    localStorage.removeItem("accessToken");
+
+    setToken(null);
+    setIsLoggedIn(false);
+    setUser(null);
+  };
 
   return (
-     <AuthContext.Provider value={{ isLoggedIn, user, login, logout}}>
+     <AuthContext.Provider value={{ token, isLoggedIn, user, login, logout}}>
             {children}
         </AuthContext.Provider>
   );

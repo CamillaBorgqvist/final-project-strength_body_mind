@@ -7,7 +7,7 @@ import crypto from "crypto"
 import express from "express"
 import mongoose from "mongoose"
 
-const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/strength-body-mind" //changed from test-auth
+const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/strength-body-mind"
 mongoose.connect(mongoUrl)
 mongoose.Promise = Promise
 
@@ -35,6 +35,17 @@ const userSchema = new Schema({
   }
 })
 
+//Schema to save workout to user
+const workoutSchema = new Schema({
+  userId: { type: Schema.Types.ObjectId, ref: "User", required: true },
+    choice: String,
+    image: String,
+    exercises: Array,
+  createdAt: { type: Date, default: Date.now }
+})
+
+const Workout = model("Workout", workoutSchema)
+
 const User = model("User", userSchema)
 
 const authenticateUser = async (req, res, next) => {
@@ -55,17 +66,15 @@ const authenticateUser = async (req, res, next) => {
 const port = process.env.PORT || 8080
 const app = express()
 
-// Middleware
-app.use(cors())
+app.use(cors({
+  origin: ["https://strengthbodymind.netlify.app/", "http://localhost:5174"],
+  credentials: true 
+}));
+
 app.use(express.json())
 
-// Test route
-/*
-app.get("/", (req, res) => {
-  res.send("Hello Technigo!")
-})*/
 
-// Register user
+// Endpoint to Register user
 app.post("/users", async (req, res) => {
   try {
     const { name, email, password } = req.body
@@ -103,7 +112,7 @@ app.post("/users", async (req, res) => {
   }
 })
 
-// Login user
+// Endpoint to Login user
 app.post("/sessions", async (req, res) => {
 
   try {
@@ -132,6 +141,47 @@ app.post("/sessions", async (req, res) => {
     })
   }
 })
+
+//Endpoint to Save workout
+app.post("/workouts", authenticateUser, async (req, res) => {
+  const {choice, image, exercises} = req.body
+
+  try {
+    const workout = new Workout({
+      userId: req.user._id,
+      choice,
+      image,
+      exercises
+    })
+
+    const saved = await workout.save()
+    res.json({ success: true, workout: saved })
+  } catch (error) {
+    res.status(400).json({ success: false, message: "Kunde inte spara pass"})
+  }
+})
+
+//Endpoint to Get saved workout
+app.get("/workouts", authenticateUser, async (req, res) => {
+  const workouts = await Workout.find({userId: req.user._id})
+  res.json(workouts)
+})
+
+// Endpoint to Delete a saved workout
+app.delete("/workouts/:id", authenticateUser, async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    // Erase workout that match workoutid and user
+    const deleted = await Workout.findOneAndDelete({ _id: id, userId: req.user._id });
+    if (!deleted) {
+      return res.status(404).json({ success: false, message: "Passet hittades inte" });
+    }
+    res.json({ success: true, message: "Pass borttaget" });
+  } catch (error) {
+    res.status(400).json({ success: false, message: "Kunde inte radera pass" });
+  }
+});
 
 
 // Protected route example
