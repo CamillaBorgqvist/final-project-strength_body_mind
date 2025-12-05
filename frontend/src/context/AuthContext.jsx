@@ -9,12 +9,12 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(initialToken)
   const [isLoggedIn, setIsLoggedIn] = useState(!!initialToken)
   const [user, setUser] = useState (null)
-  
+
 
   // LOGIN-funktion
   const login = async (email, password) => {
     try {
-      const response = await fetch("http://localhost:8080/sessions", {
+      const response = await fetch("https://strength-body-mind.onrender.com/sessions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password })

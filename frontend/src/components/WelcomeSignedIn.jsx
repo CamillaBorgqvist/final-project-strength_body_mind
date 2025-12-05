@@ -14,7 +14,7 @@ export const WelcomeSignedIn = () => {
 
     const fetchProfile = async () => {
       try {
-        const response = await fetch("http://localhost:8080/profile", {
+        const response = await fetch("https://strength-body-mind.onrender.com/profile", {
           headers: { Authorization: `Bearer ${token}` }
         })
         const data = await response.json()
