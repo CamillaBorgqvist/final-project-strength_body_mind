@@ -15,7 +15,7 @@ export const SaveWorkoutProvider = ({children}) => {
         }    
 
         //get saved workouts from specific user
-        fetch("http://localhost:8080/workouts", {
+        fetch("https://strength-body-mind.onrender.com/workouts", {
             headers: {Authorization: `Bearer ${token}`}
         })
             .then((res) => res.json())
@@ -27,7 +27,7 @@ export const SaveWorkoutProvider = ({children}) => {
     const saveWorkout = async (workout) => {
         if (!token) return; 
 
-        const response = await fetch("http://localhost:8080/workouts", {
+        const response = await fetch("https://strength-body-mind.onrender.com/workouts", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -46,7 +46,7 @@ export const SaveWorkoutProvider = ({children}) => {
     const deleteWorkout = async (id) => {
         if (!token) return;
 
-        const response = await fetch(`http://localhost:8080/workouts/${id}`, {
+        const response = await fetch(`https://strength-body-mind.onrender.com/workouts/${id}`, {
             method: "DELETE",
             headers: { Authorization: `Bearer ${token}` },
         });
