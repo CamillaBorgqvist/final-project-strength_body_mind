@@ -67,7 +67,7 @@ const port = process.env.PORT || 8080
 const app = express()
 
 app.use(cors({
-  origin: ["https://strengthbodymind.netlify.app", "http://localhost:5174"],
+  origin: ["https://strengthbodymind.netlify.app", "http://localhost:5173"],
   credentials: true 
 }));
 
@@ -184,13 +184,14 @@ app.delete("/workouts/:id", authenticateUser, async (req, res) => {
 });
 
 
-// Protected route example
+/* Protected route example
 app.get("/secrets", authenticateUser, (req, res) => {
   res.json({
     secret: "This is secret",
     user: req.user.name
   })
 })
+  */
 
 //Logged in site    
     app.get("/profile", authenticateUser, (req, res) => {

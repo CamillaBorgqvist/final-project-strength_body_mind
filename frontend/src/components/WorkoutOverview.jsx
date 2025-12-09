@@ -32,9 +32,9 @@ export const WorkoutOverview = ({showHeader = true}) => {
     {showHeader && (
     <div className="header-pick-workout">
         <h2>Workout Overview</h2>
-        <p>Här får du en överblick över alla våra träningapass. Tabata passen är perfekta för dig på språng och kan genomföras överallt utan redskap. 
+        <p>Här får du en överblick över alla våra träningapass. Tabatapassen är perfekta för dig på språng och kan genomföras överallt utan redskap. 
           Gympassen är skapade med tre olika fokus så inga muskler missas. 
-          Stretch passen är perfekta att genomföras som de är eller efter ett styrkapass.  Med våra Tabata pass får du en snabb och effektiv träning med olika fokusområden.
+          Stretchpassen är perfekta att genomföras som de är eller efter ett styrkepass.
         </p>
         <button onClick={() => navigate(-1)} className="back-button" >
           <ArrowLeft className="back-arrow" />

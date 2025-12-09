@@ -39,13 +39,12 @@ export const WelcomeSignedIn = () => {
       <h2>Välkommen {userData.name}</h2>
       <h2>Vilket pass vill du träna idag?</h2>
       <WorkoutOverview showHeader={false} />
-
       
-        <section className="saved-workouts-section">
+      <section className="saved-workouts-section">
           <h2>Dina sparade pass</h2>
 
           {savedWorkouts.length === 0 && (
-            <h4>Du har inga sparade pass ännu.</h4>
+            <h4>Du har inga sparade pass än.</h4>
           )}
 
           <div className="saved-workouts-card-section">
@@ -72,7 +71,7 @@ export const WelcomeSignedIn = () => {
                   </div>
                 ))}
           </div>  
-        </section> 
+      </section> 
     </>  
   )
 }

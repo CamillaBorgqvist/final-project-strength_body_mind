@@ -6,14 +6,14 @@ import { useState } from "react";
 import { ArrowLeft } from "lucide-react";
 
 export const WorkoutSpecific = () => {
-  const location = useLocation(); //get access to values from Link
+  const location = useLocation();
   const {saveWorkout} = useSavedWorkout();
   const { choice, image } = location.state || {}; 
   const [ message, setMessage] = useState("");
   const [ zoomedImage, setZoomedImage] = useState(null);
   const navigate = useNavigate ();
 
-  // slår ihop the data from json and filters on users choise 
+  // add up data from json and filters on users choise 
   const allExercises = Object.values(data).flat();
   const selectedExercises = allExercises.filter(ex => ex.program === choice);
 

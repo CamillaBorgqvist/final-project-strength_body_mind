@@ -21,10 +21,12 @@
     width: 40%;
     background-color: rgba(246, 244, 248, 0.6);
     border: 1px solid rgb(214, 203, 224); 
+    color: rgb(48, 48, 48);
     font-size: 12px;
     padding: 5px 15px;
     border-radius: 15px;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .login-form h2{

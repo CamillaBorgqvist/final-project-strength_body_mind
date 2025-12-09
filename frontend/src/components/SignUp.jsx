@@ -17,7 +17,7 @@ export const SignUp = () => {
       
       const data = await response.json()
       if (data.success) {
-        setMessage("Konto skapat! 🎉")
+        setMessage("Konto skapat! 🎉 Logga in för att ta del av alla träningspass!")
         localStorage.setItem("accessToken", data.accessToken)
       } else {
         setMessage("Något gick fel: " + data.message)

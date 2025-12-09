@@ -29,10 +29,7 @@ export const SaveWorkoutProvider = ({children}) => {
 
         const response = await fetch("https://strength-body-mind.onrender.com/workouts", {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${token}`
-            },
+            headers: {"Content-Type": "application/json", Authorization: `Bearer ${token}` },
             body: JSON.stringify(workout)
         });
 

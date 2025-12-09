@@ -41,7 +41,7 @@ export const TimerInterval = ({ work = 20, rest = 10, rounds = 8 }) => {
             intervalRef.current = setInterval(() => setTime((t) => t - 1), 1000);
         }
       } else {
-        // in rest, start next work
+        // if rest, start next work
         setIsWorkPhase(true);
         setCyclesLeft((prev) => prev - 1);
         setTime(work);

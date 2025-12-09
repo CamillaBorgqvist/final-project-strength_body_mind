@@ -7,7 +7,6 @@ import { FadeInSection } from "./FadeInScroll"
 export const Home = () => {
     const isDesktop = useMediaQuery ({minWidth: 1000 });
 
-
     const images = [
         { src: "/situplogo.jpg", text: "Skapa ett pass som passar dig" },
         { src: "/dumbellogo.jpg", text: "Välj ett av våra färdiga gympass" },
@@ -19,7 +18,6 @@ export const Home = () => {
     <section className="hero-container">
         < HeroSection />
     </section>
-
     
     <section className="home-first-section">
         {isDesktop ? (
@@ -31,8 +29,8 @@ export const Home = () => {
                 <div className="desktop-home-description">
                     <img src="/home.jpg" alt="Woman stretching" className="home-image" />
                     <div className="desktop-home-description-text">
-                        <h4><span className="highlight-word">Vi har gjort alla förberedelser</span> så det enda du behöver tänka på är att trycka på Start!</h4>
-                        <h4> Passen är anpassade att kunna genomföras vart du än är. <br/><span className="highlight-word">Hemma. På Landet. På Stranden</span> </h4>
+                        <h4>Vi har gjort <span className="highlight-word">alla förberedelser</span> så det enda du behöver tänka på är att trycka på Start!</h4>
+                        <h4> Passen är anpassade att kunna genomföras vart du än är. <br/><span className="highlight-word">Hemma. På Landet. På Stranden.</span> </h4>
                         <h4>Välj ett av våra <span className="highlight-word">färdiga träningsprogram</span> och kombinera dom så det passar dig.</h4>
                     </div>
                     <img src="/home1.jpg" alt="Woman doing pushup" className="home-image" />
@@ -49,8 +47,8 @@ export const Home = () => {
                 <img src="/home1.jpg" alt="Woman doing pushup" className="home-image" />
             </div>
             <div className="mobile-home-description">
-                <h4><span className="highlight-word">Vi har gjort alla förberedelser</span> så det enda du behöver tänka på är att trycka på Start!</h4>
-                <h4> Passen är anpassade att kunna genomföras vart du än är. <br/><span className="highlight-word">Hemma. På Landet. På Stranden</span> </h4>
+                <h4>Vi har gjort <span className="highlight-word">alla förberedelser</span> så det enda du behöver tänka på är att trycka på Start!</h4>
+                <h4> Passen är anpassade att kunna genomföras vart du än är. <br/><span className="highlight-word">Hemma. På Landet. På Stranden.</span> </h4>
                 <h4>Välj ett av våra <span className="highlight-word">färdiga träningsprogram</span> och kombinera dom så det passar dig.</h4>
             </div>
             </FadeInSection>
@@ -66,12 +64,11 @@ export const Home = () => {
                 <p className="home-scroll-text">{item.text}</p>
             </div>
             </FadeInSection>
-            ))}
+        ))}
     </section>
 
     <section className="workout-container">
         <FadeInSection>
-        {/*<h2>Välj ett av våra populära träningsprogram</h2> */}
         <h2>Vilken typ av träning är du sugen på idag?</h2>
         <WorkoutOverview showHeader={false} />
         </FadeInSection>
@@ -84,8 +81,6 @@ export const Home = () => {
         </FadeInSection>
     </section>
     
-
-
     </>
   )
 }

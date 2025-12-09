@@ -34,7 +34,7 @@ export const App = () => {
               <Route path="/Workoutoverview" element={ <WorkoutOverview />} />
               <Route path="/WorkoutselectionTabata" element={ <WorkoutSelectionTabata />} />
               <Route path="/WorkoutselectionGym" element={ <WorkoutSelectionGym /> } />
-              <Route path="WorkoutselectionStretch" element= { <WorkoutSelectionStretch />} />
+              <Route path="/WorkoutselectionStretch" element= { <WorkoutSelectionStretch />} />
               <Route path="/Workoutspecific" element={ <PrivateRoute> <WorkoutSpecific /> </PrivateRoute>} />
               <Route path="/Workoutdetails" element={ <PrivateRoute><WorkoutDetails /> </PrivateRoute>} />
             </Routes>

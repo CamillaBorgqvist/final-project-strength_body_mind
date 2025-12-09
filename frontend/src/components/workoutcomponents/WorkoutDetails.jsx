@@ -12,7 +12,7 @@ export const WorkoutDetails = () => {
     exercises.map(() => false)
   );
 
-  const ifGym = choice === "gym-rygg" || choice === "gym-ben" || choice === "gym-bröst-och-axlar";
+  const ifGym = choice === "gym-back" || choice === "gym-legs" || choice === "gym-chest-&-shoulders";
 
   const timerSettings = {
     "stretch-lowerbody": { work: 45, rest: 7, rounds: 2 },

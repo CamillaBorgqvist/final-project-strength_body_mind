@@ -25,9 +25,6 @@ export const HeroSection = () => {
         {images.map((src, index) => (
             <img key={index} src={src} alt="Fitness images" className={`hero-image ${index === currentImg ? "active" : ""}`} />
         ))}
-        <div className="hero-text">
-            {/*<h1>Strength Body Mind</h1>*/}
-        </div>
     </section>
   );
 }

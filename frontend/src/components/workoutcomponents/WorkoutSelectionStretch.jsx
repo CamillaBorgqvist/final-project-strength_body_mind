@@ -10,7 +10,7 @@ export const WorkoutSelectionStretch = () => {
     <div className="header-pick-workout">
       <h2>Stretch</h2>
       <p>Med våra stretchpass får du möjlighet att mjuka upp och sträcka ut musklerna.
-        Stretchpassen kan du göra helt fristående som dagens lugnare träning eller efter en tyngre träningspass.</p>
+        Stretchpassen kan du göra helt fristående som dagens lugnare träning eller efter ett tyngre träningspass.</p>
       <button onClick={() => navigate(-1)} className="back-button" >
         <ArrowLeft className="back-arrow" />
       </button>  
