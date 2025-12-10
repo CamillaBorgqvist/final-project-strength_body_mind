@@ -15,6 +15,7 @@ import { WorkoutDetails } from "./components/workoutcomponents/WorkoutDetails"
 import { AuthProvider } from "./context/AuthContext"
 import { SaveWorkoutProvider } from './context/SaveWorkoutContext';
 import { Footer } from './components/Footer';
+import { ScrollToTop } from './components/ScrollToTop';
 
 
 export const App = () => {
@@ -23,6 +24,7 @@ export const App = () => {
     <AuthProvider>
       <SaveWorkoutProvider>
         <BrowserRouter>
+          <ScrollToTop />
           <main>
             <Header />
             <Routes>
