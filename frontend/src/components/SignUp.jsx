@@ -28,31 +28,33 @@ export const SignUp = () => {
   }
 
   return (
-    <form onSubmit={handleSignup} className="login-form">
-      <h2>Skapa konto</h2>
-      <input
-        type="text"
-        placeholder="Namn"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        required
-      />
-      <input
-        type="email"
-        placeholder="E-post"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <input
-        type="password"
-        placeholder="Lösenord"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
-      <button type="submit">Registrera</button>
-      <p>{message}</p>
-    </form>
+    <section className="login-section">
+      <form onSubmit={handleSignup} className="login-form">
+        <h2>Skapa konto</h2>
+        <input
+          type="text"
+          placeholder="Namn"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+        <input
+          type="email"
+          placeholder="E-post"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Lösenord"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+        <button type="submit">Registrera</button>
+        <p>{message}</p>
+      </form>
+    </section>
   )
 };

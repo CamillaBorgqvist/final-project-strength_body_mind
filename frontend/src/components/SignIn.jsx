@@ -29,32 +29,34 @@ export const SignIn = () => {
   };
 
   return (
-    <form onSubmit={handleLogin} className="login-form">
-      <h2>Logga in</h2>
+    <section className="login-section">
+      <form onSubmit={handleLogin} className="login-form">
+        <h2>Logga in</h2>
 
-      {/*message if user i redirected to Signin*/}
-      {redirectMessage && <p style={{ color: "orange" }}>{redirectMessage}</p>} 
-      
-      <input
-        type="email"
-        placeholder="E-post"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <input
-        type="password"
-        placeholder="Lösenord"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
-      <button type="submit" disabled={loading}> 
-        {loading ? "Loggar in..." : "Logga in"}
-      </button>
-      <p>{message}</p>
-      <p>Har du inte ett konto hoss oss än? Skapa ett här.</p>
-      <Link to="/Signup"> <button> Skapa Konto </button> </Link>
-    </form>
+        {/*message if user i redirected to Signin*/}
+        {redirectMessage && <p style={{ color: "orange" }}>{redirectMessage}</p>} 
+        
+        <input
+          type="email"
+          placeholder="E-post"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Lösenord"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+        <button type="submit" disabled={loading}> 
+          {loading ? "Loggar in..." : "Logga in"}
+        </button>
+        <p>{message}</p>
+        <p>Har du inte ett konto hoss oss än? Skapa ett här.</p>
+        <Link to="/Signup"> <button> Skapa Konto </button> </Link>
+      </form>
+    </section>  
   )
 };

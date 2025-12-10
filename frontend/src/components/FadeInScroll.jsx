@@ -10,7 +10,7 @@ export const FadeInSection = ({ children }) => {
           ref.current.classList.add("show");
         }
       },
-      { threshold: 0.2 } // triggar när 20% syns
+      { threshold: 0.2 } // triggers when 20% visable
     );
 
     observer.observe(ref.current);
