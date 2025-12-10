@@ -8,6 +8,7 @@ export const SignIn = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [message, setMessage] = useState("")
+  const [loading, setLoading] = useState(false)
   const { login } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
@@ -17,6 +18,7 @@ export const SignIn = () => {
 
   const handleLogin = async (event) => {
     event.preventDefault()
+    setLoading(true)
     const result = await login(email, password)
 
     if (result.success) {
@@ -47,9 +49,11 @@ export const SignIn = () => {
         onChange={(e) => setPassword(e.target.value)}
         required
       />
-      <button type="submit">Logga in</button>
+      <button type="submit" disabled={loading}> 
+        {loading ? "Loggar in..." : "Logga in"}
+      </button>
       <p>{message}</p>
-      <p>Har du inte ett konto hoss oss än? Skapa ett här nere.</p>
+      <p>Har du inte ett konto hoss oss än? Skapa ett här.</p>
       <Link to="/Signup"> <button> Skapa Konto </button> </Link>
     </form>
   )
